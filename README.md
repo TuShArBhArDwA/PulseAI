@@ -17,10 +17,9 @@ This platform helps candidates prepare for interviews by simulating live session
 3. [Getting Started](#-getting-started)  
    - Clone & Install  
    - Environment Variables  
-   - Run Dev Servers  
-4. [Demo Flow](#-demo-flow)  
-5. [Contributing](#-contributing)  
-6. [License](#-license)  
+   - Run Dev Servers   
+4. [Contributing](#-contributing)  
+5. [License](#-license)  
 
 ---
 
@@ -70,6 +69,46 @@ This platform helps candidates prepare for interviews by simulating live session
 
 ---
 
+
+## Getting Started
+
+### 1. Clone & Install
+```bash
+git clone https://github.com/TuShArBhArDwA/PulseAI
+cd PulseAI
+npm install
+```
+
+### 2. Environment Variables
+
+Create `.env.local` in the root with:
+
+```bash
+# Firebase
+NEXT_PUBLIC_FIREBASE_API_KEY=xxx
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=xxx
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=xxx
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=xxx
+NEXT_PUBLIC_FIREBASE_APP_ID=xxx
+
+# AI & Voice
+GEMINI_API_KEY=your_gemini_key
+VAPI_API_KEY=your_vapi_key
+
+# Backend
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5001/<project-id>/us-central1/api
+```
+
+### 3. Run Dev Servers
+```bash
+npm run dev        # frontend (Next.js)
+firebase emulators:start   # backend (Firestore/Auth/Functions)
+```
+
+### 4. Open in browser
+```bash
+http://localhost:3000
+```
 
 
 ---

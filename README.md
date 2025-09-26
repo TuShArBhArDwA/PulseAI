@@ -1,3 +1,17 @@
+# PulseAI Prep- AI Powered Interview Assistant 
+
+<img width="1903" height="967" alt="image" src="https://github.com/user-attachments/assets/5b7181f0-2bd2-4c89-a5e1-3b528cc4f0ef" />
+
+An AI-powered interview platform with a **real-time voice assistant**, built using:
+
+- **Frontend**: React (Next.js 13+ with App Router), TypeScript, TailwindCSS, shadcn/ui  
+- **Backend**: Firebase (Auth, Firestore, Storage, Functions)  
+- **AI / Voice**: VAPI (real-time voice) + Gemini AI (LLM for Q&A generation & scoring)  
+
+This project simulates live technical interviews by combining structured Q&A, voice-enabled candidate interactions, and a recruiter dashboard for reviewing results.
+
+---
+
 ## Contributing
 
 1. Fork the repository

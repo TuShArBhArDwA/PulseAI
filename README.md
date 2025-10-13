@@ -12,14 +12,14 @@ This platform helps candidates prepare for interviews by simulating live session
 
 ## 📑 Table of Contents
 
-1. [Features](#-features)  
-2. [Tech Stack](#-tech-stack)  
-3. [Getting Started](#-getting-started)  
+1. [Features](#features)  
+2. [Tech Stack](#tech-stack)  
+3. [Getting Started](#getting-started)  
    - Clone & Install  
    - Environment Variables  
    - Run Dev Servers   
-4. [Contributing](#-contributing)  
-5. [License](#-license)  
+4. [Contributing](#contributing)  
+5. [License](#license)  
 
 ---
 

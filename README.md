@@ -189,7 +189,12 @@ http://localhost:3000
 
 Watch the product demonstration showcasing multiple personas, adaptive interviews, and feedback:
 
-🔗 Demo Video Link: *Coming soon*
+Video:
+
+https://github.com/user-attachments/assets/47ea40f3-0f25-4667-9bd9-0b329a23cf12
+
+
+
 
 
 ---

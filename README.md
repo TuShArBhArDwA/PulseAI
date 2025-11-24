@@ -15,10 +15,10 @@ This platform helps candidates prepare for interviews by simulating live session
 ## Table of Contents
 
 1. [Features](#features)
-   - [Authentication](#1-authentication)  
-   - [Interview Practice](#2-interview-practice)  
-   - [Feedback & Scoring](#3-feedback--scoring)
-   - [Progress Tracking](#4-progress-tracking) 
+   - [Authentication](#authentication)  
+   - [Interview Practice](#interview-practice)  
+   - [Feedback & Scoring](#feedback--scoring)
+   - [Progress Tracking](#progress-tracking) 
 2. [System Architecture Overview](#system-architecture-overview)
    - [High Level Architecture](#1-high-level-architecture)  
    - [Interview Conversation Workflow](#2-interview-conversation-workflow)   

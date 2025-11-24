@@ -14,8 +14,14 @@ This platform helps candidates prepare for interviews by simulating live session
 
 ## Table of Contents
 
-1. [Features](#features)  
-2. [System Architecture Overview](#system-architecture-overview)  
+1. [Features](#features)
+   - [Authentication](#1-authentication)  
+   - [Interview Practice](#2-interview-practice)  
+   - [Feedback & Scoring](#3-feedback--scoring)
+   - [Progress Tracking](#4-progress-tracking) 
+2. [System Architecture Overview](#system-architecture-overview)
+   - [High Level Architecture](#1-high-level-architecture)  
+   - [Interview Conversation Workflow](#2-interview-conversation-workflow)   
 3. [Agent Intelligence & Persona Handling](#agent-intelligence--persona-handling)  
 4. [Design Decisions](#design-decisions)  
 5. [UI/UX Design](#uiux-design)  
@@ -73,9 +79,11 @@ This platform helps candidates prepare for interviews by simulating live session
 
 PulseAI uses a real-time voice pipeline to deliver natural conversations.
 
-### High-Level Architecture
+### High Level Architecture
 
 > User → Vapi Voice Agent → Backend API → Gemini LLM → Firestore DB → Back to User
+
+
 ![System Architecture](https://github.com/user-attachments/assets/3e6a800d-ca09-4a43-bef4-3913a6a1563b)
 
 

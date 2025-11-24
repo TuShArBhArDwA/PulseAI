@@ -5,21 +5,29 @@
 **Practice real interviews with AI-powered practice and instant feedback.**  
 This platform helps candidates prepare for interviews by simulating live sessions with an AI interviewer and providing detailed performance analysis.
 
+
+
 🌐 Live Demo: [Deployed Site](https://ai-interview-platform-pink.vercel.app/)
 
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 1. [Features](#features)  
-2. [Tech Stack](#tech-stack)  
-3. [Getting Started](#getting-started)  
-   - Clone & Install  
-   - Environment Variables  
-   - Run Dev Servers   
-4. [Contributing](#contributing)  
-5. [License](#license)  
+2. [System Architecture Overview](#system-architecture-overview)  
+3. [Agent Intelligence & Persona Handling](#agent-intelligence--persona-handling)  
+4. [Design Decisions](#design-decisions)  
+5. [UI/UX Design](#uiux-design)  
+6. [Tech Stack](#tech-stack)  
+7. [Getting Started](#getting-started)  
+   - [Clone & Install](#1-clone--install)  
+   - [Environment Variables](#2-environment-variables)  
+   - [Run Dev Servers](#3-run-dev-servers)  
+8. [Demo Video](#demo-video)  
+9. [License](#license)  
+10. [Contact](#contact)
+
 
 ---
 
@@ -57,6 +65,61 @@ This platform helps candidates prepare for interviews by simulating live session
 - Track all your past interviews and improvements over time from your personal dashboard.  
 - View scores, summaries, and AI feedback for each practice session.  
 
+
+---
+
+
+## System Architecture Overview
+
+PulseAI uses a real-time voice pipeline to deliver natural conversations.
+
+### High-Level Architecture
+
+> User → Vapi Voice Agent → Backend API → Gemini LLM → Firestore DB → Back to User
+![System Architecture](https://github.com/user-attachments/assets/3e6a800d-ca09-4a43-bef4-3913a6a1563b)
+
+
+### Interview Conversation Workflow
+
+<img width="308" height="904" alt="Voice Agent Workflow" src="https://github.com/user-attachments/assets/1a3201ad-8db7-4e1c-b0c6-db142df946a1" />
+
+---
+
+## Agent Intelligence & Persona Handling
+
+PulseAI goes beyond basic Q&A by adapting to different user behaviors:
+
+| Persona Type | Agent Response |
+|-------------|----------------|
+| Confused User | Guides with role suggestions & clarifying questions |
+| Efficient User | Shorter interviews, direct questions, less small talk |
+| Chatty User | Acknowledges but steers conversation back to topic |
+| Edge Case User | Handles impossible or off-topic requests politely |
+
+> Each response is generated based on the user's intent and interview progress.
+
+---
+
+
+## Design Decisions
+
+- Chose **voice-first** approach to improve realism and confidence building
+- Used **Gemini** for detailed interview scoring and follow-up logic
+- **Firestore** stores all interview history to track progress over time
+- Stateless computing through serverless Firebase Functions for scalability
+- Minimal UI, optimized for quick practice sessions
+
+
+---
+
+## UI/UX Design 
+
+The design for this project was first prototyped in Figma.
+
+🔗 Figma Design: [View Design](https://www.figma.com/design/6BcssTD1cY8k0vCaxccGLL/PulseAI-Prep?node-id=2-2&t=RKX50xQv1kFbrAFI-1)
+
+
+
 ---
 
 ## Tech Stack
@@ -79,7 +142,7 @@ cd PulseAI
 npm install
 ```
 
-### 2. Environment Variables
+### 2. Environment Variables   
 
 Create `.env.local` in the root with:
 
@@ -110,16 +173,14 @@ firebase emulators:start   # backend (Firestore/Auth/Functions)
 http://localhost:3000
 ```
 
-
 ---
 
-## Contributing
+## Demo Video
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
+Watch the product demonstration showcasing multiple personas, adaptive interviews, and feedback:
+
+🔗 Demo Video Link: *Coming soon*
+
 
 ---
 
